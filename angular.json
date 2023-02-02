@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "instrumeda": {
+    "si-tracking": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/instrumeda",
+            "outputPath": "dist/si-tracking",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "instrumeda:build:production"
+              "browserTarget": "si-tracking:build:production"
             },
             "development": {
-              "browserTarget": "instrumeda:build:development"
+              "browserTarget": "si-tracking:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "instrumeda:build"
+            "browserTarget": "si-tracking:build"
           }
         },
         "test": {
